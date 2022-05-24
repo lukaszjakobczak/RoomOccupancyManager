@@ -22,7 +22,10 @@ class RoomOccupancyManagerServiceSpec extends Specification {
             result.getPricePremium() == pricePremium
         where:
             orders             | usageEconomy | priceEconomy | usagePremium | pricePremium
-            createOrders(3, 3) | 3            | 167.99d       | 3            | 738
+            createOrders(3, 3) | 3            | 167.99d      | 3            | 738
+            createOrders(5, 7) | 4            | 189.99d      | 6            | 1054
+            createOrders(7, 2) | 4            | 189.99d      | 2            | 583
+            createOrders(1, 7) | 1            | 45.99d       | 7            | 1153 //test fail here, those test data seems incorrect
     }
 
     private Orders createOrders(int freeEconomyRooms, int freePremiumRooms) {

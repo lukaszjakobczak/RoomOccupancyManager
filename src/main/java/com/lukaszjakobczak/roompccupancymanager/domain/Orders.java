@@ -2,7 +2,6 @@ package com.lukaszjakobczak.roompccupancymanager.domain;
 
 import lombok.Getter;
 
-
 @Getter
 public class Orders {
 

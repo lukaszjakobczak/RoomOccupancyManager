@@ -1,0 +1,10 @@
+###
+POST http://localhost:8080/rooms/optimize HTTP/1.1
+Content-Type: application/json
+Cookie: key=first-value
+
+{
+  "orders": [23, 45, 155, 374, 22, 99.99, 100, 101, 115, 209],
+  "freeEconomyRooms": 3,
+  "freePremiumRooms": 3
+}

@@ -19,9 +19,12 @@ public class RoomOccupancyManagerController {
     }
 
     @PostMapping
-    ResponseEntity<Void> optimize(@RequestBody OrdersRestDto ordersRestDto) {
-        roomOccupancyManagerApplicationFacade.optimize(mapToDto(ordersRestDto));
-        return ResponseEntity.noContent().build();
+    ResponseEntity<RoomOccupancyRestDto> optimize(@RequestBody OrdersRestDto ordersRestDto) {
+        return ResponseEntity.ok(
+                RoomOccupancyRestDto.fromDto(
+                        roomOccupancyManagerApplicationFacade.optimize(mapToDto(ordersRestDto))
+                )
+        );
     }
 
     private OrdersDto mapToDto(OrdersRestDto ordersRestDto) {

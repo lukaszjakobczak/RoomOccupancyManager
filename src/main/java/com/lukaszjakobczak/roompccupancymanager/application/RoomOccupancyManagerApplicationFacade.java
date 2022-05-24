@@ -1,6 +1,5 @@
 package com.lukaszjakobczak.roompccupancymanager.application;
 
-
 public class RoomOccupancyManagerApplicationFacade {
 
     private final RoomOccupancyManagerApplicationService roomOccupancyManagerApplicationService;
@@ -9,8 +8,8 @@ public class RoomOccupancyManagerApplicationFacade {
         this.roomOccupancyManagerApplicationService = roomOccupancyManagerApplicationService;
     }
 
-    public void optimize(OrdersDto ordersDto){
-        roomOccupancyManagerApplicationService.optimize(ordersDto);
+    public RoomOccupancyDto optimize(OrdersDto ordersDto){
+        return roomOccupancyManagerApplicationService.optimize(ordersDto);
     }
 
 }

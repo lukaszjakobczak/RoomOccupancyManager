@@ -8,8 +8,8 @@ public class RoomOccupancyManagerFacade {
         this.roomOccupancyManagerService = roomOccupancyManagerService;
     }
 
-    public void optimize(Orders orders) {
-        this.roomOccupancyManagerService.optimize(orders);
+    public RoomOccupancy optimize(Orders orders) {
+       return this.roomOccupancyManagerService.optimize(orders);
     }
 
 }
