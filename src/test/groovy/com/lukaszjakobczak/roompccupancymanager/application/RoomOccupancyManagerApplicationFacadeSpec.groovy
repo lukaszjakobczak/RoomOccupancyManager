@@ -12,7 +12,7 @@ class RoomOccupancyManagerApplicationFacadeSpec extends Specification{
         roomOccupancyManagerApplicationFacade = new RoomOccupancyManagerApplicationFacade(roomOccupancyManagerApplicationService)
     }
 
-    def "Should call optimize room occupancy "() {
+    def "Should call optimize room occupancy"() {
         given: "There is incoming request"
             double[] ordersData = [23.0, 45.0, 155.0, 374.0, 22.0, 99.99, 100.0, 101.0, 115.0, 209.0]
             def ordersDto = new OrdersDto(ordersData)

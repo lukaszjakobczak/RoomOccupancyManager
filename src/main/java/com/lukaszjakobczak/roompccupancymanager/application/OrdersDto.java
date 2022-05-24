@@ -1,8 +1,5 @@
 package com.lukaszjakobczak.roompccupancymanager.application;
 
-import lombok.Getter;
-
-@Getter
 public class OrdersDto {
 
     private final double[] orders;
@@ -11,4 +8,7 @@ public class OrdersDto {
         this.orders = orders;
     }
 
+    double[] getOrders() {
+        return orders;
+    }
 }
