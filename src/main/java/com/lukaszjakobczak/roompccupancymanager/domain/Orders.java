@@ -2,10 +2,11 @@ package com.lukaszjakobczak.roompccupancymanager.domain;
 
 import lombok.Getter;
 
+
 @Getter
 public class Orders {
 
-    private double[] orders;
+    private final double[] orders;
     private final int freeEconomyRooms;
     private final int freePremiumRooms;
 

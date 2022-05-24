@@ -6,6 +6,13 @@ public class RoomOccupancy {
     private int usageEconomy;
     private double priceEconomy;
 
+    public RoomOccupancy(int usagePremium, double pricePremium, int usageEconomy, double priceEconomy) {
+        this.usagePremium = usagePremium;
+        this.pricePremium = pricePremium;
+        this.usageEconomy = usageEconomy;
+        this.priceEconomy = priceEconomy;
+    }
+
     public int getUsagePremium() {
         return usagePremium;
     }
