@@ -16,7 +16,7 @@ class RoomOccupancyManagerApplicationService {
     }
 
     private Orders mapToDomainObject(OrdersDto ordersDto) {
-        return new Orders(ordersDto.getOrders());
+        return new Orders(ordersDto.getOrders(), ordersDto.getFreeEconomyRooms(), ordersDto.getFreePremiumRooms());
     }
 
 }

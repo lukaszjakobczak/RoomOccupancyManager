@@ -6,10 +6,12 @@ import lombok.Getter;
 public class Orders {
 
     private double[] orders;
+    private final int freeEconomyRooms;
+    private final int freePremiumRooms;
 
-    public Orders(double[] orders) {
+    public Orders(double[] orders, int freeEconomyRooms, int freePremiumRooms) {
         this.orders = orders;
+        this.freeEconomyRooms = freeEconomyRooms;
+        this.freePremiumRooms = freePremiumRooms;
     }
-
-
 }

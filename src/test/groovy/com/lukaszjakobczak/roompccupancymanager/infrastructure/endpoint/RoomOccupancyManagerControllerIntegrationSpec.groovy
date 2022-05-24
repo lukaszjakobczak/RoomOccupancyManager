@@ -23,7 +23,9 @@ class RoomOccupancyManagerControllerIntegrationSpec extends BaseIntegrationSpec 
     private String guestsOrdersJson() {
         """
             {
-                "orders": [23, 45, 155, 374, 22, 99.99, 100, 101, 115, 209]
+                "orders": [23, 45, 155, 374, 22, 99.99, 100, 101, 115, 209],
+                "freeEconomyRooms": 3,
+                "freePremiumRooms": 3
             }
         """
     }

@@ -25,6 +25,6 @@ public class RoomOccupancyManagerController {
     }
 
     private OrdersDto mapToDto(OrdersRestDto ordersRestDto) {
-        return new OrdersDto(ordersRestDto.getOrders());
+        return new OrdersDto(ordersRestDto.getOrders(), ordersRestDto.getFreeEconomyRooms(), ordersRestDto.getFreePremiumRooms());
     }
 }

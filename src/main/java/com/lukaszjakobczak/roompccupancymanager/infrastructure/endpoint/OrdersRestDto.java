@@ -8,9 +8,17 @@ import lombok.Getter;
 public class OrdersRestDto {
 
     private final double[] orders;
+    private final int freeEconomyRooms;
+    private final int freePremiumRooms;
 
     @JsonCreator
-    OrdersRestDto(@JsonProperty("orders") double[] orders) {
+    OrdersRestDto(
+            @JsonProperty("orders") double[] orders,
+            @JsonProperty("freeEconomyRooms") int freeEconomyRooms,
+            @JsonProperty("freePremiumRooms") int freePremiumRooms
+    ) {
         this.orders = orders;
+        this.freeEconomyRooms = freeEconomyRooms;
+        this.freePremiumRooms = freePremiumRooms;
     }
 }
