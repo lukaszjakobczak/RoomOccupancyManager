@@ -1,4 +1,4 @@
-package roompccupancymanager
+package com.lukaszjakobczak.roompccupancymanager
 
 import com.lukaszjakobczak.roompccupancymanager.RoompccupancymanagerApplication
 import org.springframework.beans.factory.annotation.Autowired

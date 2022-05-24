@@ -1,6 +1,6 @@
-package roompccupancymanager.infrastructure.endpoint
+package com.lukaszjakobczak.roompccupancymanager.infrastructure.endpoint
 
-import roompccupancymanager.BaseIntegrationSpec
+import com.lukaszjakobczak.roompccupancymanager.BaseIntegrationSpec
 
 import static org.springframework.http.MediaType.APPLICATION_JSON
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post

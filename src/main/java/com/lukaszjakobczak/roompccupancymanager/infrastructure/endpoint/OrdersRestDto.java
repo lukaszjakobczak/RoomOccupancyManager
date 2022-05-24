@@ -5,12 +5,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 
 @Getter
-public class OrdersDto {
+public class OrdersRestDto {
 
     private final double[] orders;
 
     @JsonCreator
-    OrdersDto(@JsonProperty("orders") double[] orders) {
+    OrdersRestDto(@JsonProperty("orders") double[] orders) {
         this.orders = orders;
     }
 }

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class RoomOccupancyManagerController {
 
     @PostMapping
-    ResponseEntity<Void> optimize(@RequestBody OrdersDto ordersDto) {
+    ResponseEntity<Void> optimize(@RequestBody OrdersRestDto ordersRestDto) {
         return ResponseEntity.noContent().build();
     }
 }
